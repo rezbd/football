@@ -50,11 +50,13 @@ body{
 footer{
     display: flex;
     justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 63px;
 }
 
 .footer-items{
-    width: 480px;
-    height: 110px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -63,6 +65,7 @@ footer{
 
 .footer-logo{
     width: 483px;
+    margin-bottom: 20px;
 }
 
 .footer-logo img{
