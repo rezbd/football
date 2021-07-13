@@ -45,3 +45,31 @@ body{
     font-size: 16px;
     color: #6C6C6C;
 }
+
+/* Footer Styles */
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-items{
+    width: 480px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.footer-logo{
+    width: 483px;
+}
+
+.footer-logo img{
+    width: 80%;
+}
+
+footer .social-icon{
+    height: 32px;
+    width: 32px;
+}
