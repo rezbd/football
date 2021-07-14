@@ -101,6 +101,56 @@ main{
  Bonus Section 2. Join Us 
 **************************/
 
+.join-us{
+    display: flex;
+    justify-content: center;
+}
+
+.join-us-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 75%;
+}
+
+.join-us-text{
+    background-color: navy;
+    
+}
+
+.join-us-text a{
+    display: flex;
+        
+    /* flex-direction: column; */
+    /* width: 100px; */
+    justify-content: center;
+    /* align-items: center; */
+    text-decoration: none;
+    color: #f4bc46;
+    margin-bottom: 15px;
+    
+}
+
+.join-us-image img{
+    width: 100%;
+    height: 100%;
+}
+.join-us-text h2{
+    /* width: 70%; */
+    text-align: center;
+    color: whitesmoke;
+}
+
+.join-us-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.join-us-icon img{
+    width: 150px;
+    height: 150px;
+}
+
 
 /***************** 
   Footer Styles 
@@ -147,6 +197,10 @@ footer .social-icon{
         grid-template-columns: 1fr;
     }
     .football-news-flexible{
+        grid-template-columns: 1fr;
+    }
+
+    .join-us-content{
         grid-template-columns: 1fr;
     }
 }
