@@ -70,17 +70,21 @@ main{
 }
 
 .all-players{
-    margin-left: 12.5%;
-    margin-right: 14.5%;
+    width: 1050px;
+    /* width: 72.9167%; */
+    /* margin-left: 12.5%; */
+    /* margin-right: 14.5%; */
     /* margin-left: 180px; */
     /* margin-right: 210px; */
     margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 .players{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    column-gap: 30px;
     row-gap: 27px;
 }
 
@@ -126,6 +130,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 30px;
+    padding: 15px;
 }
 
 .football-news .news-head{
@@ -173,6 +178,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 75%;
+    padding: 15px;
 }
 
 .join-us-text{
@@ -250,11 +256,11 @@ footer .social-icon{
 
 /* For Mobile devices */
 @media screen and (max-width: 688px) {
-    body{
+    /* body{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    } */
     
     .header-container{
         grid-template-columns: 1fr;
@@ -262,23 +268,31 @@ footer .social-icon{
     }
 
     .all-players{
-        margin-left: 180px;
-        margin-right: 210px;
+        width: 100%
     }
 
     .players{
         grid-template-columns: 1fr;
-        width:90%;
+    }
+
+    .player{
+        width: 100%;
+        height: auto;
+    }
+
+    .player img{
+        width: 100%;
+        height: auto;
     }
     
     .football-news-content{
         grid-template-columns: 1fr;
-        width:90%;
+        width:100%;
     }
 
     .join-us-content{
         grid-template-columns: 1fr;
-        width: 90%;
+        width: 100%;
     }
 
     .header-image{
