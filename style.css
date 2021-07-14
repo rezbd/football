@@ -28,7 +28,7 @@ header h1{
     color: #FFFFFF;
     font-size: 64px;
     font-weight: 700;
-    
+    line-height: 80px;
 }
 
 .header-container{
@@ -149,6 +149,14 @@ main{
     background-color: white;
 }
 
+.news-text a{
+    text-decoration: none;
+    background-color: royalblue;
+    padding: 10px 40px;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
 .news-image img{
     width: 100%;
 }
@@ -195,6 +203,8 @@ main{
     /* width: 70%; */
     text-align: center;
     color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .join-us-icon{
@@ -250,9 +260,15 @@ footer .social-icon{
 
 /* for Mobile */
 @media screen and (max-width: 688px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .header-container{
         grid-template-columns: 1fr;
-        width:80%;
+        width:90%;
     }
     .players{
         grid-template-columns: 1fr;
@@ -261,17 +277,19 @@ footer .social-icon{
     
     .football-news-content{
         grid-template-columns: 1fr;
-        width:60%;
+        width:70%;
     }
 
     .join-us-content{
         grid-template-columns: 1fr;
-        width: 60%;
+        width: 70%;
     }
 
     .header-image{
         margin-top: 40px;
     }
+
+    
 
 }
 
@@ -289,12 +307,12 @@ footer .social-icon{
     
     .football-news-content{
         grid-template-columns: 1fr;
-        width: 60%;
+        width: 80%;
     }
 
     .join-us-content{
         grid-template-columns: 1fr;
-        width: 60%;
+        width: 80%;
     }
 
     .header-image{
