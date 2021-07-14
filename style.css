@@ -260,6 +260,12 @@ footer .social-icon{
         grid-template-columns: 1fr;
         width:90%;
     }
+
+    .all-players{
+        margin-left: 180px;
+        margin-right: 210px;
+    }
+
     .players{
         grid-template-columns: 1fr;
         width:80%;
@@ -290,7 +296,7 @@ footer .social-icon{
     }
     .players{
         grid-template-columns: 1fr 1fr;
-        width: 80%;
+        width: 100%;
     }
     
     .football-news-content{
