@@ -3,17 +3,26 @@
 
 /* Common Styles */
 body{
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     font-family: 'Poppins', sans-serif;
-    width: 1440px; /*according to design*/
+    /* width: 1440px; */
+    width: fit-content;
 }
 
 
 /* All Players Section */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .all-players{
-    margin-left: 180px;
-    margin-right: 210px;
+    margin-left: 12.5%;
+    margin-right: 14.5%;
+    margin-bottom: 150px;
 }
 
 .players{
@@ -46,7 +55,56 @@ body{
     color: #6C6C6C;
 }
 
-/* Footer Styles */
+
+/******************************** 
+ Bonus Section 1. Football News 
+********************************/
+.football-news{
+   display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.football-news-flexible{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+
+}
+
+.football-news .news-head{
+    font-size: 16px;
+    font-weight: 700;
+    color: #18191F;
+    text-transform: capitalize;
+}
+
+.football-news .news-title{
+    font-size: 32px;
+    color: #18191F;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.news-text{
+    padding: 25px;
+    background-color: white;
+}
+
+.news-image img{
+    width: 100%;
+}
+
+
+/************************* 
+ Bonus Section 2. Join Us 
+**************************/
+
+
+/***************** 
+  Footer Styles 
+******************/
 footer{
     display: flex;
     justify-content: center;
@@ -75,4 +133,20 @@ footer{
 footer .social-icon{
     height: 32px;
     width: 32px;
+}
+
+
+
+/* ****************
+   Media Query
+***************** */
+
+@media only screen and (max-width: 688px) {
+   
+    .players{
+        grid-template-columns: 1fr;
+    }
+    .football-news-flexible{
+        grid-template-columns: 1fr;
+    }
 }
