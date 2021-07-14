@@ -10,6 +10,11 @@ body{
     width: fit-content;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+}
+
 /****************** 
   Styles of Header 
 *******************/
@@ -117,7 +122,7 @@ main{
     margin-bottom: 100px;
 }
 
-.football-news-flexible{
+.football-news-content{
     width: 70%;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -245,11 +250,55 @@ footer .social-icon{
 
 /* for Mobile */
 @media screen and (max-width: 688px) {
-   
+    .header-container{
+        grid-template-columns: 1fr;
+        width:80%;
+    }
+    .players{
+        grid-template-columns: 1fr;
+        width:80%;
+    }
+    
+    .football-news-content{
+        grid-template-columns: 1fr;
+        width:60%;
+    }
+
+    .join-us-content{
+        grid-template-columns: 1fr;
+        width: 60%;
+    }
+
+    .header-image{
+        margin-top: 40px;
+    }
+
 }
+
 
 /* For Tablet */
 @media screen and (min-width: 689px) and (max-width: 992px) {
-   
+    .header-container{
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+    .players{
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+    }
+    
+    .football-news-content{
+        grid-template-columns: 1fr;
+        width: 60%;
+    }
+
+    .join-us-content{
+        grid-template-columns: 1fr;
+        width: 60%;
+    }
+
+    .header-image{
+        margin-top: 40px;
+    }
     
 }
