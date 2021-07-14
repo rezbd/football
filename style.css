@@ -35,7 +35,6 @@ header h1{
     display: grid;
     column-gap: 102px;
     grid-template-columns: 1fr 1fr;
-    
 }
 
 .header-image img{
@@ -57,7 +56,6 @@ header:hover .bg-image{
 .header-text a .arrow{
     margin-left: 10px;
 }
-
 
 /*********************************
   Styles of All Players Section 
@@ -108,7 +106,6 @@ main{
     color: #6C6C6C;
 }
 
-
 /******************************** 
  Bonus Section 1. Football News 
 ********************************/
@@ -156,7 +153,6 @@ main{
 .news-image img{
     width: 100%;
 }
-
 
 /************************* 
  Bonus Section 2. Join Us 
@@ -262,24 +258,14 @@ footer .social-icon{
         grid-template-columns: 1fr;
     }
 
-    .player{
+    .player, .player img{
         width: 100%;
         height: auto;
     }
 
-    .player img{
-        width: 100%;
-        height: auto;
-    }
-    
-    .football-news-content{
+    .football-news-content, .join-us-content{
         grid-template-columns: 1fr;
         width:100%;
-    }
-
-    .join-us-content{
-        grid-template-columns: 1fr;
-        width: 100%;
     }
 
     .header-image{
@@ -303,28 +289,17 @@ footer .social-icon{
         grid-template-columns: 1fr 1fr;
     }
 
-    .player{
-        width: 100%;
-        height: auto;
-    }
-
-    .player img{
+    .player, .player img{
         width: 100%;
         height: auto;
     }
     
-    .football-news-content{
+    .football-news-content, .join-us-content{
         grid-template-columns: 1fr;
         width:100%;
-    }
-
-    .join-us-content{
-        grid-template-columns: 1fr;
-        width: 100%;
     }
 
     .header-image{
         margin-top: 40px;
     }
-    
 }
